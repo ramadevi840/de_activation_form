@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title> Account Deactivation</title>
+</head>
+<body>
+
+  <h1 style="text-align: center;">Account Deactivation</h1>
+
+  <form action="#" method="post" style="text-align: center; border: 2px solid white; background-color: purple;color:white;">
+  <br><br>
+      <label for="user">Username or Email:</label>
+      <input type="text" id="user" name="user" required>
+   
+<br><br>
+  
+      <label for="phone">Phone Number (optional):</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+    <br><br>
+
+      <label for="password">Confirm Password:</label>
+      <input type="password" id="password" name="password" required>
+  
+<br><br>
+
+      <label for="reason">Reason for deactivation:</label>
+      <select id="reason" name="reason" required>
+        <option value="">-- Select reason --</option>
+        <option value="privacy">Privacy concerns</option>
+        <option value="time">Too time consuming</option>
+        <option value="account">Created alternate account</option>
+        <option value="technical">Technical issues</option>
+        <option value="other">Other</option>
+      </select>
+    <br><br>
+
+   
+      <label>Would you like to temporarily deactivate or permanently delete?</label>
+      <br><br>
+      <input type="radio" id="temporary" name="type" value="temporary" >
+      <label for="temporary">Temporarily deactivate</label>
+      
+      <input type="radio" id="permanent" name="type" value="permanent">
+      <label for="permanent">Permanently delete</label>
+   <br><br>
+
+   <br>
+      <label for="details">Additional details (optional):</label>
+      <br>
+      <textarea id="details" name="details" rows="4" cols="40"></textarea>
+   <br>
+   <br>
+<br>
+    
+      <input type="checkbox" id="confirm" name="confirm" required>
+      <label for="confirm">I confirm I want to proceed and understand this action may be irreversible.</label>
+    
+<br><br>
+    
+      <input type="submit" value="Submit Deactivation Request">
+      <input type="reset" value="Reset">
+   <br><br>
+  </form>
+</body>
+</html>
